@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/timer"
+    tools:context="com.example.timer.MainActivity">
+
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:text="Waktu 00:03:00"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/time"
+        android:layout_alignStart="@+id/time"
+        android:layout_below="@+id/time"
+        android:text="Mulai" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/time"
+        android:text="Berhenti"
+        tools:ignore="UnknownId" />
+
+
+</RelativeLayout>
